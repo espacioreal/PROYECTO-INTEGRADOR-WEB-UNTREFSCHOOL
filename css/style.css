@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Belanosima", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #1F8A70;  
+  --color-secundario: #181823;  
+  --color-terciario: #00425A; 
+  --color-cuarto: #EFF5F5;     
+  --color-quinto:  #FC7300;  
+}
+
+h1 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  background-color:var(--color-quinto);
+  color: var(--color-cuarto);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+h2 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+}
+h3{
+  font-family:"Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--color-secundario);
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: var(--color-secundario);
+}
+
+a {
+  text-decoration: none;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  color: var(--color-principal);
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navegador {
+  background-color:var(--color-terciario);
+}
+
+.navegador-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid var(--color-cuarto);
+}
+
+.menu-mobil {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  position: absolute;
+  background-color: var(--color-terciario);
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height 0.2s ease;
+  z-index: 10;
+}
+
+.navbar-link {
+  color: var(--color-quinto);
+}
+
+#navegador-header:target .navbar-container {
+  height: 300px;
+}
+
+#navegador-header:target .abrir {
+  display: none;
+}
+
+#navegador-header:target .cerrar {
+  display: flex;
+}
+
+.cerrar {
+  display: none;
+}
+
+
+
+#quienes-somos {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-quinto);
+  text-align: center;
+  color: var(--color-cuarto);
+  padding: 10%;
+}
+
+#por-que-elegirnos {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-quinto);
+  text-align: center;
+  color: var(--color-cuarto);
+  padding: 10%;
+}
+
+#propuesta-educativa {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-quinto);
+  text-align: center;
+  color: var(--color-cuarto);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.octagon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin:3.5rem;
+}
+
+.octagon0,
+.octagon1,
+.octagon2,
+.octagon3,
+.octagon4
+ {
+  width: 10rem;
+  height: 10rem;
+  background-size:cover;
+  clip-path: polygon(31.3% 0%,
+      68.7% 0%,
+      100% 31.3%,
+      100% 68.7%,
+      68.7% 100%,
+      31.3% 100%,
+      0% 68.7%,
+      0% 31.3%);
+}
+
+.octagon0 {
+  background-image: url('../img/estudiantes-sabiendo-respuesta-correcta.jpg');
+}
+
+.octagon1 {
+  background-image: url('../img/mujer-mirando-tableta-nina-feliz.jpg');
+}
+
+.octagon2 {
+  background-image: url('../img/ninos-alto-angulo-haciendo-apreton-manos.jpg');
+}
+
+.octagon3 {
+  background-image: url('../img/vista-frontal-lindos-ninos-aprendiendo-reciclar.jpg');
+}
+
+.octagon4 {
+  background-image: url('../img/cerca-hermosos-ninos-divirtiendose-juntos.jpg');
+}
+.card{
+  margin: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-terciario);
+  text-align: center;
+  color: var(--color-quinto);
+  padding: 5%;
+}
+
+#redes-sociales {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin: 5%;
+}
+
+#redes-sociales img {
+  transition: all 300ms;
+}
+
+
+#contactos {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  width: 90%;
+  margin: 5%;
+}
+
+#contactos a {
+  color: var(--color-quinto);
+}
+
+#boton-escribenos {
+  display: inline;
+  padding: 10px 20px;
+  color: var(--color-quinto);
+  background-color: var(--color-principal);
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+  .d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+.p-2 {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    flex: 1;
+}
+
+
+@media (min-width: 768px) {
+
+
+  .navegador {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #1f8a70;
+  }
+  .navbar-container {
+    height: auto;
+    flex-direction: row;
+    position: static;
+    width: 80%;
+  }
+  .menu-cel {
+    display: none;
+  }
+  .navegador-header {
+    border-bottom: none;
+  }
+  .navbar-item {
+    text-align: center;
+  }
+  .navbar-link:hover {
+    color: #1f8a70;
+    font-weight: 600;
+  }
+  .noticias-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /
+    gap: 20px; 
+}
+
+.p-2 {
+  flex: 1; 
+  min-width: 300px; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+
+
+  #quienes-somos {
+    padding: 5%;
+    text-align: right;
+  }
+
+  #quienes-somos img {
+    width: 300px;
+    margin-right: 10%;
+  }
+
+  .article-quienessomos {
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  #por-que-elegirnos {
+    padding: 5%;
+    text-align: left;
+  }
+
+  #por-que-elegirnos img {
+    width: 300px;
+    margin-left: 10%;
+  }
+
+  .article-porqueelegirnos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
+
+  #propuesta-educativa {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #eff5f5;
+    color: #1f8a70;
+}
+
+.propuesta {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.propuestas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.propuesta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    width: 200px; 
+}
+
+.octagon {
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    clip-path: polygon(31.3% 0%, 68.7% 0%, 100% 31.3%, 100% 68.7%, 68.7% 100%, 31.3% 100%, 0% 68.7%, 0% 31.3%);
+    margin-bottom: 10px; 
+}
+
+
+.octagon0 { background-image: url('../img/estudiantes-sabiendo-respuesta-correcta.jpg'); }
+.octagon1 { background-image: url('../img/mujer-mirando-tableta-nina-feliz.jpg'); }
+.octagon2 { background-image: url('../img/ninos-alto-angulo-haciendo-apreton-manos.jpg'); }
+.octagon3 { background-image: url('../img/vista-frontal-lindos-ninos-aprendiendo-reciclar.jpg'); }
+.octagon4 { background-image: url('../img/cerca-hermosos-ninos-divirtiendose-juntos.jpg'); }
+
+.img-fluid {
+    max-width: 85%;
+    height: auto;
+}
+
+
+
+  #redes-sociales img:hover {
+    transform: scale(1.4);
+  }
+
+  #contactos a:hover {
+    color: #fca864;
+  }
+
+  #boton-escribenos:hover {
+    background-color: #fca864;
+  }
+  
+  .contenedor-redes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor-contacto,
+  .contenedor-institucion,
+  .contenedor-redessociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-redes div {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .footer {
+    padding: 2%;
+  }
+
+  #contactos {
+    align-content: center;
+  }
+
+  #redes-sociales {
+    align-items: center;
+    width: 70%;
+  }
+
+}
+@media (max-width: 576px) {
+
+
+  .d-flex {
+      flex-direction: column;
+  }
+
+  .p-2 {
+      margin: 5px 0;
+  }      
+
+}
